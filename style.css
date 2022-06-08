@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+}
+
+body {
+  background-color: rgb(241, 238, 238);
+}
+
+input , button , textarea , select , option {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 7px 10px;
+  background-color: white;
+}
+
+option {
+  line-height: 2rem;
+}
+
+button {
+  background-color: rgb(78, 44, 131);
+  color: white;
+}
+
+label {
+  margin: 5px;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  height: 100vh;
+}
+
+.trybewarts-header-logo {
+  width: 40px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  margin: 10px 20px;
+}
+
+.trybewarts-login {
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 230px;
+  margin: 10px 0;
+}
+
+#email {
+  flex-grow: 1;
+}
+
+.learning {
+  flex-flow: column wrap;
+  height: 100px;
+  width: 300px;
+}
+
+main {
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+#evaluation-form {
+  flex-direction: column;
+  width: 675px;
+  padding: 30px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  align-self: start;
+}
+
+.form-title {
+  text-align: center;
+  padding: 20px;
+}
+
+#input-name , #input-lastname , #input-email {
+  flex-grow: 1;
+}
+
+#label-house {
+  align-self: center;
+}
+
+.family-container {
+  flex-direction: column;
+}
+
+.learning label , .family-container label {
+  display: flex;
+  align-items: center;
+}
+
+.textarea-container {
+  position: relative;
+  height: 135px;
+}
+
+#textarea {
+  flex-grow: 1;
+  height: 100%;
+  resize: none;
+}
+
+#counter {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.rate-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate-container input {
+  appearance: none;
+  background-color: white;
+  border: 1px solid rgb(78, 44, 131);
+  color: rgb(78, 44, 131);
+  margin: 2px;
+}
+
+.rate-container input:hover {
+  background-color: rgb(78, 44, 131);
+  color: white;
+}
+
+.rate-container input:checked {
+  background-color: rgb(78, 44, 131);
+  color: white;
+}
+
+.rate-container input:before {
+  content: attr(value);
+}
+
+@media ( min-width : 700px ) {
+
+  .header {
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .trybewarts-login {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+}
