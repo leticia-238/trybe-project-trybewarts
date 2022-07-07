@@ -1,8 +1,10 @@
-# TrybeWarts - duo project
+# TrybeWarts  
 
-## Data de início em 11 Jan 2022 
+## Projeto em dupla realizado com [Thiago Mota](https://github.com/thiago-mota)
 
-## Skills
+### Data de início em 11 Jan 2022 
+
+### Skills
 
 - Criar formulários HTML;
 - Usar CSS Flexbox para criar layouts flexíveis;
